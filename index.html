@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alejandra Olazagasti">
+  <meta name="description" content="No más de 165 caracteres">
+  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+  <meta name="theme-color" content="#09f">
+  <!-- Iconos  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- tipografía  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <script>let currentLanguage = 'es'; // Default language    </script>
+  <title>Portafolio</title>
+
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <script src="assets/js/dark_mode.js"></script>
+
+  <header class="header">
+    <nav class="navbar grid--container">
+      
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon" data-translate="close"></i></a>
+
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home" data-translate="home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about" data-translate="about">Acerca de Mí</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills" data-translate="skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects" data-translate="projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact" data-translate="contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles">
+        <div class="navbar__toggle--darkmode">
+          <input type="checkbox" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
+            <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language">
+          <input type="checkbox" id="language-toggle" onclick="toggleLanguage()"
+            class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon" data-translate="openMenu"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class='bx bxl-html5 home__layer home__layer--1' data-speed="-5"></i>
+      <i class='bx bxl-javascript home__layer home__layer--2' data-speed="5"></i>
+      <i class='bx bxl-css3 home__layer home__layer--3' data-speed="2"></i>
+      <i class='bx bxl-nodejs home__layer home__layer--4' data-speed="6"></i>
+      <i class='bx bxl-react home__layer home__layer--5' data-speed="8"></i>
+      <i class='bx bxl-tailwind-css home__layer home__layer--6' data-speed="-2"></i>
+      <i class='bx bxl-redux home__layer home__layer--7' data-speed="4"></i>
+      <i class='bx bxl-typescript home__layer home__layer--8' data-speed="-2"></i>
+      <i class='bx bxl-git home__layer home__layer--9' data-speed="6"></i>
+      <i class='bx bxl-graphql home__layer home__layer--10' data-speed="-7"></i>
+      <i class='bx bx-code-alt home__layer home__layer--11' data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <span></span>
+          
+        </div>
+
+
+        <div class="home__info">
+
+          <h1 class="home__title" data-translate="home_title">hola, soy Santiago Toctaquiza</h1>
+
+          <p class="home__description" data-translate="home_description">
+            Soy desarrollador web, apasionado por la tecnología y la
+            programación.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <a download="curriculum.pdf" href="assets/pdf/CURRICULUM HF.pdf"><button
+              class="btn  btn--primary" type="button" data-translate="download_cv_español">Descarga CV (español)</button></a>
+          <a download="curriculum.pdf" href="assets/pdf/CURRICULUM HF (ingles).pdf"><button
+              class="btn  btn--primary" type="button" data-translate="download_cv_ingles">Descarga CV (english)</button></a>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about" class="about section">
+      <h2 class="section__title" data-translate="aboutTitle">Acerca de Mí</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description" data-translate="aboutDescription">
+          Apasionado y dedicado programador en desarrollo web. Con conocimiento en html, JavaScript, css, react, con habilidades demostradas en la resolución de problemas complejos y la creación de soluciones innovadoras. Capacidad probada para trabajar tanto de forma independiente como en equipos colaborativos, demostrando excelentes habilidades de comunicación y adaptabilidad. Comprometido con el aprendizaje continuo y el desarrollo profesional para mantenerse actualizado en un campo en constante evolución
+        </p>
+
+
+        <div class="about__cards">
+          <!--Card 1 -->
+
+          <!--Card 2 -->
+
+          <!--Card 3 -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title" data-translate="skillsTitle">Habilidades</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description" data-translate="skillsDescription">
+          Soy capaz de trabajar de forma independiente o en equipo, colaborando estrechamente con diseñadores y otros
+          desarrolladores para llevar las visiones creativas a la vida. Mi atención al detalle y mi pasión por
+          mantenerme al día con las últimas tendencias y tecnologías me permiten ofrecer productos web de alta calidad
+          que satisfacen las necesidades y expectativas de los usuarios.
+        </p>
+
+        <div class="skills__wrapper">
+          <div class="skills__cards">
+            <!--Card 1 -->
+            <input type="radio" name="slide" id="c1" checked class="skills__input">
+            <label for="c1" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-html5"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title" >HTML</h3>
+                  <p data-translate="html">Transformando ideas en experiencias digitales. Diseño y desarrollo de interfaces de usuario accesibles y atractivas utilizando HTML5 y las últimas prácticas de marcado semántico.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 2 -->
+            <input type="radio" name="slide" id="c2" checked class="skills__input">
+            <label for="c2" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-css3"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">CSS3</h3>
+                  <p data-translate="css3">Estilo que cautiva. Creación de diseños visualmente impactantes y responsivos con CSS3 y preprocesadores como Sass. Especializado en el diseño de interfaces intuitivas y elegantes que mejoran la experiencia del usuario.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 3 -->
+            <input type="radio" name="slide" id="c3" checked class="skills__input">
+            <label for="c3" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-javascript"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">Javascript</h3>
+                  <p data-translate="javascript">Dando vida a la web. Desarrollo dinámico de sitios web y aplicaciones interactivas utilizando JavaScript y frameworks modernos como React.js y Vue.js. Apasionado por la creación de experiencias web fluidas y personalizadas que cautivan a los usuarios.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 4 -->
+            <input type="radio" name="slide" id="c4" checked class="skills__input">
+            <label for="c4" class="skills__card">
+              <div class="skills__card-row">
+                <i class='bx bxl-react'></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">React</h3>
+                  <p data-translate="react">Construyendo experiencias dinámicas y escalables. Experto en el desarrollo de aplicaciones web y móviles utilizando React.js y Redux para gestionar el estado de manera eficiente. Capaz de crear componentes reutilizables y mantener un código limpio y modular. Apasionado por la creación de interfaces de usuario intuitivas y de alto rendimiento que impulsan la interactividad y la satisfacción del usuario.</p>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="skills__tags">
+          <h3 class="skills__tags-title" data-translate="skillsTagsTitle">Habilidades Blandas</h3>
+          <div class="skills__tags-container">
+            <span class="skills__tag" data-translate="softSkillResponsible">Responsable</span>
+            <span class="skills__tag" data-translate="softSkillTeamwork">Trabajo en equipo</span>
+            <span class="skills__tag" data-translate="softSkillCreative">Creativo</span>
+            <span class="skills__tag" data-translate="softSkillPunctual">Puntual</span>
+            <span class="skills__tag" data-translate="softSkillProactive">Proactivo</span>
+            <span class="skills__tag" data-translate="softSkillSelfTaught">Autodidacta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <h2 class="section__title" data-translate="projectsTitle">Proyectos</h2>
+      <!-- Example HTML for Projects Section -->
+      <div class="projects__container grid--container">
+        <!-- Project 1 -->
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <a href="https://jocular-cobbler-6f9c85.netlify.app/" target="_blank">
+                <img src="assets/img/clima.jpg" alt="project 1" />
+              </a>
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name" data-translate="project1Name">Proyecto 1</h3>
+              <p class="projects__description" data-translate="project1Description">
+                Da datos del clima actual como: la velocidad de los vientos en metros por segundos, el porcentaje de las nubes, la presion en hectopascales, y la temperatura en Celsius y Fahrenheit.
+              </p>
+
+         
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <a href="https://stately-concha-75acbb.netlify.app/" target="_blank">
+              <img src="assets/img/rick.jpg" alt="project 2" />
+            </a>
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name" data-translate="project2Name">Proyecto 2</h3>
+              <p class="projects__description" data-translate="project2Description">
+                Aplicacion de Rick and Morty: Da informacion de los habitantes y su estado actual en la serie de los distintos planetas de la galaxia de Rick and Morty presionando los numeros del 1 al 126.
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <a href="https://chimerical-beijinho-d76642.netlify.app/" target="_blank">
+              <img src="assets/img/galleta.jpg" alt="project 3" />
+            </a>
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name" data-translate="project3Name">Proyecto 3</h3>
+              <p class="projects__description" data-translate="project3Description">
+                Aplicacion de galleta de la fortuna: Dice tu fortuna.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title" data-translate="contactTitle">Contacto</h2>
+
+      <div class="contact__container">
+        <div class="contact__info">
+          <h3 class="contact__info-title" data-translate="contactInfoTitle">Información de contacto</h3>
+          <p class="contact__info-description" data-translate="contactInfoDescription">
+            ¡Conéctate conmigo! Estoy aquí para ayudarte. No dudes en contactarme para cualquier colaboración.
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class='bx bxl-whatsapp'></i>
+              <span class="contact__info-number">
+                <a href="https://wa.me/+593980263125?text=Tu%20Mensaje%20De%20Texto" target="_blank"
+                  data-translate="contactInfoWhatsApp">Enviar mensaje a WhatsApp</a>
+              </span>
+            </div>
+            <div class="contact__info-item">
+              <i class='bx bxl-github'></i>
+              <span class="contact__info-number">
+                <a href="https://github.com/santiagopau" target="_blank"> GitHub </a>
+              </span>
+
+            </div>
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+              <span class="contact__info-number">
+                <a> +593 980263125 </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+              <span class="contact__info-mail">
+                <a id="mail" href="https://outlook.live.com/" target="_blank"> santiagobox.5@hotmail.com </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+              <span class="contact__info-map"> Mera-Pastaza-Ecuador. </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class='bx bxl-linkedin-square'></i>
+              <span class="contact__info-mail">
+                <a id="mail" href="https://www.linkedin.com/in/santiago-toctaquiza-carrasco-a26153305/" target="_blank"> Linkedin </a>
+              </span>
+            </div>
+          </address>
+        </div>
+<!-- 
+        <div class="contact__form">
+          <h3 class="contact__form-title" data-translate="contactFormTitle">Enviar mensaje</h3>
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label" data-translate="nameLabel">Nombre</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label" data-translate="emailLabel">Correo</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label" data-translate="subjectLabel">Asunto</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label" data-translate="messageLabel">Mensaje</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal"style="border-radius:2px ;z-index: 11;">
+              <span data-translate="successMessage">¡Formulario enviado con éxito!</span>
+              <button type="reset" id="btn_close-modal" data-translate="closeModalButton">Cerrar</button>
+          </dialog>
+          
+
+            <button type="submit" class="btn contact__form-button" data-translate="sendButton">
+              Enviar
+            </button> -->
+
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer section" >
+    <div class="footer__container grid--container">
+        <div class="footer__info">
+            <h3 class="footer__title" data-translate="footerTitle">Santiago Toctaquiza</h3>
+            <p class="footer__description" data-translate="footerDescription">
+                Soy desarrollador web, apasionado por la tecnología y la programación.
+            </p>
+        </div>
+
+
+    </div>
+
+    <p class="footer__copy" data-translate="footerCopy"style="text-align:center"></p>
+</footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/dark_mode.js"></script>
+  <script src="assets/js/helpers/send__form.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+
+
+</html>
